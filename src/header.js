@@ -6,16 +6,18 @@ export function header()
     const homePage = document.createElement('nav');
     const menu = document.createElement('nav'); 
     const about = document.createElement('nav');
-    const icon = document.createElement('img');
+    const image = document.getElementById('image');
+    const dish = document.createElement('img');
+    const icons = document.getElementById('icons'); 
 
-    icon.src = dishImage;
+    dish.src = dishImage;
 
     homePage.textContent = 'Home'; 
     menu.textContent = "Menu";
     about.textContent = "About"; 
     
-    header.appendChild(icon);
-    header.appendChild(homePage);
-    header.appendChild(menu); 
-    header.appendChild(about);
+    image.appendChild(dish);
+    icons.appendChild(homePage);
+    icons.appendChild(menu); 
+    icons.appendChild(about);
 }

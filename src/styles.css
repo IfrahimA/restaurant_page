@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap');
+
+* 
+{
+    font-family: "Playwrite SK";
+}
+
 #container
 {
     width: 100%; 
@@ -10,11 +17,16 @@
 #header
 {
     display: flex;
-    justify-content: center;
-    gap: 100px;  
-    padding: 10px 20px; 
     align-items: center;
+    justify-content: space-around;
     border-bottom: 1px solid black; 
+}
+
+#icons
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px; 
 }
 
 nav
@@ -23,8 +35,8 @@ nav
     justify-content: center;
     align-items: center;
     outline: 2px solid black;
-    width: 120px;
-    height: 50px; 
+    width: 100px;
+    height: 25px; 
     border-radius: 2px;
     font-size: 15px; 
     font-weight: 800; 
@@ -32,12 +44,36 @@ nav
 
 nav:hover
 {
-    font-size: 20px;
-    transition: 0.5s; 
+    font-size: 17px;
+    transition: 0.5s;
 }
 
-img
+#image img
 {
     width: 100px;  
     height: 100px;
+}
+
+#content img
+{
+    position: relative;
+    height: auto;
+    width: 100%; 
+}
+
+#content
+{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.test
+{
+    position: absolute; 
+    color: white; 
+    font-size: 50px; 
+    background: black;
+    opacity: 0.8;
 }
