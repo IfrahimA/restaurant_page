@@ -1,4 +1,4 @@
-import dishImage from './images/dish.png'
+import restaurantImage from './images/restaurant.png'
 
 export function header()
 {
@@ -10,11 +10,15 @@ export function header()
     const dish = document.createElement('img');
     const icons = document.getElementById('icons'); 
 
-    dish.src = dishImage;
+    dish.src = restaurantImage;
 
     homePage.textContent = 'Home'; 
     menu.textContent = "Menu";
     about.textContent = "About"; 
+
+    homePage.classList.add('home');
+    menu.classList.add('menu');
+    about.classList.add('about');
     
     image.appendChild(dish);
     icons.appendChild(homePage);
