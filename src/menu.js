@@ -17,15 +17,15 @@ export function menu()
         list.classList.add("menu-title");
         const item1 = document.createElement('li');
         item1.classList.add('menu-items')
-        item1.textContent = "Margherita Pizza";
+        item1.textContent = "Margherita Pizza - $6.99";
 
         const item2 = document.createElement('li');
         item2.classList.add('menu-items')
-        item2.textContent = "Kebab";
+        item2.textContent = "Kebab - $3.99";
 
         const item3 = document.createElement('li');
         item3.classList.add('menu-items')
-        item3.textContent = "Butter Chicken";
+        item3.textContent = "Butter Chicken - $5.99";
 
 
         
